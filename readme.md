@@ -35,7 +35,30 @@ and tail that points to the last node.
 **What is a Node??**
 
 ```
-A node is just like a hashMap, most 
+A node is just like a hashMap, it has both a value and a pointer
+The pointer of the head points to the next node and the pointer
+of the tail, since it is at the end points to null
+```
+
+**Node Diagram**
+![linked_list_nodes.png](linked_list_nodes.png)
+
+
+**Nodes in a Linked List**
+![linked_list_nested_nodes_img.png](linked_list_nested_nodes_img.png)
+
+
+**Linked List Method**
+
+```
+(a)Append adds a new node at the end of the linked list.
+   First and foremost append will create a new node.
+   if the linked list is empty, then append should create a new node and let the head and the tail 
+   point to it.
+   
+   Else if not empty, i should link the newly created node to the linked list and reassign the tail to the newNode
+   {tail.next = newNode && tail = newNode}
+
 ```
 **Notes By**
 
